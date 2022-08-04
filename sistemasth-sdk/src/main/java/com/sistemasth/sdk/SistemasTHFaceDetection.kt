@@ -49,7 +49,7 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
 
     @Keep
     public override fun startFaceDetection(var1: Fragment) {
-        super.startDocumentDetection(var1)
+        super.startFaceDetection(var1)
     }
 
     @Keep
@@ -59,7 +59,7 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
 
     @Keep
     public override fun startDocumentDetection(var1: Activity) {
-       super.startFaceDetection(var1)
+       super.startDocumentDetection(var1)
     }
 
     public override fun startDocumentDetection(var1: Fragment) {
