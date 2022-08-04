@@ -1,17 +1,13 @@
 package com.sistemasth.sdk
 
-import androidx.annotation.Keep
-import androidx.annotation.StyleRes
-import br.com.nxcd.facedetection.NxcdFaceDetection
-
-import a.a.a.a.b.a.a
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.activity.result.ActivityResultLauncher
+import androidx.annotation.Keep
+import androidx.annotation.StyleRes
 import androidx.fragment.app.Fragment
-import br.com.nxcd.facedetection.features.documentdetection.activities.DocumentDetectionActivity
-import br.com.nxcd.facedetection.features.facedetection.activities.FaceDetectionActivity
+import br.com.nxcd.facedetection.NxcdFaceDetection
 
 
 @Keep
@@ -24,6 +20,20 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
 
     public override fun setHomologation() {
         super.setHomologation();
+    }
+
+    @Keep
+    companion object {
+
+        @Keep
+        const val RESULT = "result"
+
+        @Keep
+        const val THROWABLE = "throwable"
+
+        @Keep
+        const val IMAGE_RESULT = "image_result"
+
     }
 
 
