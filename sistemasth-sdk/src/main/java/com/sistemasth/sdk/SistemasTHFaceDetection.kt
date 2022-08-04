@@ -67,14 +67,6 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
     }
 
 
-
-    @Keep
-    public val RESULT = "result"
-
-    @Keep
-    public val THROWABLE = "throwable"
-
-    @Keep
-    public val IMAGE_RESULT = "image_result"
+ 
 
 }
