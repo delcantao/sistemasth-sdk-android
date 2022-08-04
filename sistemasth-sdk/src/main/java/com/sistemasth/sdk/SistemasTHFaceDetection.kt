@@ -12,12 +12,12 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
     constructor(i: Int, s: String?, @StyleRes res: Int) : super(i, s, res) {}
 
     @Keep
-    val RESULT = "result"
+    public val RESULT = "result"
 
     @Keep
-    val THROWABLE = "throwable"
+    public val THROWABLE = "throwable"
 
     @Keep
-    val IMAGE_RESULT = "image_result"
+    public val IMAGE_RESULT = "image_result"
 
 }
