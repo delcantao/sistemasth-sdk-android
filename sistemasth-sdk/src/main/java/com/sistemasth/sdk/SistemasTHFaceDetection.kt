@@ -67,6 +67,6 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
     }
 
 
- 
+
 
 }
