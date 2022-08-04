@@ -6,6 +6,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url 'https://pkgs.dev.azure.com/nxcd/ef9b4772-b664-4276-aeca-9b430422da12/_packaging/nxcd_SDK/maven/v1'
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.2"
