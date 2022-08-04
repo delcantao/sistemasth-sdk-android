@@ -4,8 +4,13 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
+        maven {
+            url 'https://pkgs.dev.azure.com/nxcd/ef9b4772-b664-4276-aeca-9b430422da12/_packaging/nxcd_SDK/maven/v1'
+        }
+
     }
 }
 rootProject.name = "AndroidLibrary"
 include ':app'
-include ':image-preview'
+include ':sistemasth-sdk'
+
