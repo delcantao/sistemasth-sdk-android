@@ -18,9 +18,6 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
     constructor(i: Int, s: String?, @StyleRes res: Int) : super(i, s, res) {}
 
 
-    public override fun setHomologation() {
-        super.setHomologation();
-    }
 
     @Keep
     companion object {
@@ -37,6 +34,10 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
     }
 
 
+    @Keep
+    public override fun setHomologation() {
+        super.setHomologation();
+    }
 
     @Keep
     public override fun setDevelopment() {
