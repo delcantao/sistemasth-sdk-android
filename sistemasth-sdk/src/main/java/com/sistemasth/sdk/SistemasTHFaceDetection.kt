@@ -33,7 +33,12 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
 
     }
 
-
+    public fun factoryFaceDetection(i: Int, s: String?, @StyleRes res: Int) : NxcdFaceDetection {
+        return NxcdFaceDetection(i, s, res)
+    }
+    public fun factoryFaceDetection(i: Int, s: String?) : NxcdFaceDetection {
+        return NxcdFaceDetection(i, s)
+    }
     @Keep
     public override fun setHomologation() {
         super.setHomologation();
