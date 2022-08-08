@@ -70,7 +70,7 @@ afterEvaluate {
 
                 groupId = 'com.github.delcantao'
                 artifactId = 'sistemasth-sdk'
-                version = '1.0.6.1c'
+                version = '1.0.6b'
             }
         }
     }
