@@ -1,4 +1,4 @@
-package com.plcoding.androidlibrary.ui.theme
+package com.sistemasth.androidlibrary.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

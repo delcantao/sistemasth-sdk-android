@@ -77,7 +77,12 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
         super.setTimeout(var1)
     }
 
-
+    private fun GravaTotais():String {
+        return "Ola"
+    }
+    public fun TesteLF(t: String):String {
+        return t + GravaTotais()
+    }
 
 
 }

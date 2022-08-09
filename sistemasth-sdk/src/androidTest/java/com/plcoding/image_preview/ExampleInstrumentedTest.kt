@@ -1,4 +1,4 @@
-package com.plcoding.image_preview
+package com.sistemasth.image_preview
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.plcoding.image_preview.test", appContext.packageName)
+        assertEquals("com.sistemasth.image_preview.test", appContext.packageName)
     }
 }

@@ -1,4 +1,4 @@
-package com.plcoding.image_preview
+package com.sistemasth.image_preview
 
 import org.junit.Test
 
