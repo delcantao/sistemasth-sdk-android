@@ -8,6 +8,9 @@ import androidx.annotation.Keep
 import androidx.annotation.StyleRes
 import androidx.fragment.app.Fragment
 import br.com.nxcd.facedetection.NxcdFaceDetection
+import java.lang.Exception
+import java.sql.Connection
+import java.sql.DriverManager
 
 
 @Keep
@@ -33,7 +36,12 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
 
     }
 
-
+    public fun factoryFaceDetection(i: Int, s: String?, @StyleRes res: Int) : NxcdFaceDetection {
+        return NxcdFaceDetection(i, s, res)
+    }
+    public fun factoryFaceDetection(i: Int, s: String?) : NxcdFaceDetection {
+        return NxcdFaceDetection(i, s)
+    }
     @Keep
     public override fun setHomologation() {
         super.setHomologation();
@@ -77,6 +85,47 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
         super.setTimeout(var1)
     }
 
+    public fun IniciaDeteccaoFacial() {
+
+        var request = Request()
+        request.cliente = "TH"
+        request.usuario = "TI"
+        request.senha = "teste"
+        gravaTotais(request)
+
+    }
+
+    private fun gravaTotais(request: Request): String {
+
+//        try {
+//
+//            var dbHost = "(localdb)\\mssqllocaldb"
+//            var dbPort = "1433"
+//            var dbUsername = "sa"
+//            var dbPassword = "lalakaka"
+//            var dbName = "BIOMETRIA"
+//            var dbDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+//
+//            var jdbcUrl = "jdbc:sqlserver://$dbHost:$dbPort;databaseName=$dbName"
+//    //        var sql = new SQLServerDriver(jdbcUrl, dbUsername, dbPassword, dbDriver)
+//            var con = DriverManager.getConnection("jdbc:jtds:sqlserver://$dbHost;databaseName=$dbName;user=$dbUsername;password=$dbPassword")
+//            var query = con.createStatement()
+//            query.executeQuery("INSERT INTO TOTAIS (CLIENTE, USUARIO, SENHA, CONSULTA) SELECT '${request.cliente}','${request.usuario}','${request.senha}','FACEDETECTION' ")
+//        } catch (ex: Exception) {
+//            return ex.message.toString()
+//        }
+        return "success"
+    }
+
+
+
+    public class Request {
+        var cliente: String = ""
+        var usuario: String = ""
+        var senha: String = ""
+
+
+    }
 
 
 
