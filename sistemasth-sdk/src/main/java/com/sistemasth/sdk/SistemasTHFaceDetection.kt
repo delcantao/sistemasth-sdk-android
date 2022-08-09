@@ -97,23 +97,23 @@ class SistemasTHFaceDetection : NxcdFaceDetection {
 
     private fun gravaTotais(request: Request): String {
 
-        try {
-
-            var dbHost = "(localdb)\\mssqllocaldb"
-            var dbPort = "1433"
-            var dbUsername = "sa"
-            var dbPassword = "lalakaka"
-            var dbName = "BIOMETRIA"
-            var dbDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
-
-            var jdbcUrl = "jdbc:sqlserver://$dbHost:$dbPort;databaseName=$dbName"
-    //        var sql = new SQLServerDriver(jdbcUrl, dbUsername, dbPassword, dbDriver)
-            var con = DriverManager.getConnection("jdbc:jtds:sqlserver://$dbHost;databaseName=$dbName;user=$dbUsername;password=$dbPassword")
-            var query = con.createStatement()
-            query.executeQuery("INSERT INTO TOTAIS (CLIENTE, USUARIO, SENHA, CONSULTA) SELECT '${request.cliente}','${request.usuario}','${request.senha}','FACEDETECTION' ")
-        } catch (ex: Exception) {
-            return ex.message.toString()
-        }
+//        try {
+//
+//            var dbHost = "(localdb)\\mssqllocaldb"
+//            var dbPort = "1433"
+//            var dbUsername = "sa"
+//            var dbPassword = "lalakaka"
+//            var dbName = "BIOMETRIA"
+//            var dbDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+//
+//            var jdbcUrl = "jdbc:sqlserver://$dbHost:$dbPort;databaseName=$dbName"
+//    //        var sql = new SQLServerDriver(jdbcUrl, dbUsername, dbPassword, dbDriver)
+//            var con = DriverManager.getConnection("jdbc:jtds:sqlserver://$dbHost;databaseName=$dbName;user=$dbUsername;password=$dbPassword")
+//            var query = con.createStatement()
+//            query.executeQuery("INSERT INTO TOTAIS (CLIENTE, USUARIO, SENHA, CONSULTA) SELECT '${request.cliente}','${request.usuario}','${request.senha}','FACEDETECTION' ")
+//        } catch (ex: Exception) {
+//            return ex.message.toString()
+//        }
         return "success"
     }
 
